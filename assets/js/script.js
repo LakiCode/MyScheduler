@@ -1,19 +1,57 @@
 $(document).ready(function () {
+
+  var tasks = {};
     // crate var to display current date
-    var dateEl = document.querySelector("#currentDay");
-    var today = moment();
+   var today = moment().format("MM dddd YYYY hh:mm");
+    
+    //use momnet and jquery for today date in header
     // format date for #currentDay
-    dateEl.textContent = today.format("MMM-dddd-YYYY hh:mm");
-  
+    $("#currentDay").text(today);
+  // storage task to storage
+    
+    const colDescription = document.querySelectorAll(".description")
+    // function for save button 
     $(".row").on("click", "button", function () {
-      console.log("<button> was clicked");
+    var saveTask = $(this).siblings("textarea").val();
+    var taskID = $(this).siblings("textarea").attr("id");
+    localStorage.setItem(taskID, saveTask);
+      console.log(taskID, saveTask);
     });
-  // function for save button 
   
+   // show valu in task descripion field
+
   // function to update hour .add and .remove class
-  
+
   // load,  dave and call data from local storage
-  
-  
-  
-  });
+    var hour = moment().hours()
+
+    $(".description").each(function(){
+      var colHour=parseInt(
+        $(this).attr("id")
+      )
+      if(colHour < hour){
+        $(this).addClass("past");
+      } else if 
+      (colHour === hour) {
+      $(this).addClass("present");
+      } else{
+        $(this).addClass("future")
+      }
+
+    })
+
+    $("#9").val(localStorage.getItem("9"));
+    $("#10").val(localStorage.getItem("10"));
+    $("#11").val(localStorage.getItem("11"));
+    $("#12").val(localStorage.getItem("12"));
+    $("#13").val(localStorage.getItem("13"));
+    $("#14").val(localStorage.getItem("14"));
+    $("#15").val(localStorage.getItem("15"));
+    $("#16").val(localStorage.getItem("16"));
+    $("#17").val(localStorage.getItem("17"));
+
+
+
+  // load tasks
+ // loadTasks();
+});
