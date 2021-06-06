@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  var tasks = {};
+  
     // crate var to display current date
    var today = moment().format("MM dddd YYYY hh:mm");
     
@@ -8,8 +8,6 @@ $(document).ready(function () {
     // format date for #currentDay
     $("#currentDay").text(today);
   // storage task to storage
-    
-    const colDescription = document.querySelectorAll(".description")
     // function for save button 
     $(".row").on("click", "button", function () {
     var saveTask = $(this).siblings("textarea").val();
