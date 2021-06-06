@@ -18,9 +18,6 @@ $(document).ready(function () {
       console.log(taskID, saveTask);
     });
   
-   // show valu in task descripion field
-
-  // function to update hour .add and .remove class
 
   // load,  dave and call data from local storage
     var hour = moment().hours()
@@ -39,7 +36,7 @@ $(document).ready(function () {
       }
 
     })
-
+    // get from storage all items
     $("#9").val(localStorage.getItem("9"));
     $("#10").val(localStorage.getItem("10"));
     $("#11").val(localStorage.getItem("11"));
