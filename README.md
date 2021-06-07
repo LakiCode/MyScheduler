@@ -23,7 +23,7 @@ Create task scheduler for present day with business hours
 ![alt text](./images/myTask.JPG "Final version")
 
 ## Project web link
-[web site link](https://lakicode.github.io/MySheduler/)
+[web site link](https://lakicode.github.io/MyScheduler/)
 
 ## web site deveper
 Made by Robert Fuke @June 2021
