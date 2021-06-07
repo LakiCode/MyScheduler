@@ -10,9 +10,9 @@ Create task scheduler for present day with bussines  hours
 
 ## Project screen shots
 
-![alt text](./assets/images/MockUp_pic.JPG "Mockup task scheduler")
+![alt text](./images/MockUp_pic.JPG "Mockup task scheduler")
 
-![alt text](./assets/images/myTask.JPG "Final version")
+![alt text](./images/myTask.JPG "Final version")
 
 ## Project web link
 [web site link](https://lakicode.github.io/MySheduler/)
