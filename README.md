@@ -1,6 +1,14 @@
 # My Scheduler
+
 ## Description
-Create task scheduler for present day with bussines  hours
+Create task scheduler for present day with business hours
+
+## Build site using
+* HTML
+* CSS
+* JS
+* Moment.JS
+* JQuery
 
 ## Project challanges
 * style HTML page from code
