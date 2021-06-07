@@ -8,7 +8,7 @@ Create task scheduler for present day with business hours
 * CSS
 * JS
 * Moment.JS
-* JQuery
+* jQuery
 
 ## Project challanges
 * style HTML page from code
